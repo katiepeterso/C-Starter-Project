@@ -232,6 +232,7 @@
 				AFAAA85D1A804E2100A43345 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

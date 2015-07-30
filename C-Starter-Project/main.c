@@ -10,22 +10,26 @@
 
 int main(int argc, const char * argv[]) {
     int number = 1;
-    while (number < 101)
+    int nezz,fuzz,bizz;
+    printf("Input three integers for Nezz, Fuzz and Bizz");
+    if (scanf("%d%d%d", &nezz, &fuzz, &bizz) == 3)
     {
-        if (number % 3 == 0)
+    while (number <= nezz)
+    {
+        if (number % fuzz == 0)
         {
-            if (number % 5 == 0)
+            if (number % bizz == 0)
             {
-                printf("FizzBuzz\n");
+                printf("FuzzBizz\n");
             }
             else
             {
-                printf("Fizz\n");
+                printf("Fuzz\n");
             }
         }
-        else if (number % 5 == 0)
+        else if (number % bizz == 0)
         {
-            printf("Buzz\n");
+            printf("Bizz\n");
         }
         else
         {
@@ -33,6 +37,9 @@ int main(int argc, const char * argv[]) {
         }
         number++;
     }
+    }
+    else
+        printf("You didn't enter 3 numbers\n");
     printf("Hello, World!\n");
     return 0;
 }
